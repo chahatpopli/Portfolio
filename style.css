@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#body-header {
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('first.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#education-section {
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('forth\ \(1\).jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.skills-h4 {
+    color: black;
+    margin: 30px;
+    list-style: none;
+    width: 75%;
+    padding-bottom: 15px;
+}
+
+.divider-grey {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 100px;
+    border-top: 2px solid #DC3545;
+    padding-bottom: 40px;
+}
+
+.navbar-ul,
+.icon-ul {
+    text-align: center;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 5px;
+    transition: color 0.5s, border-bottom 10s;
+}
+
+.nav-link:hover {
+    color: rgb(204, 195, 195);
+    border-bottom: 1px solid rgb(204, 195, 195);
+}
+
+.container1 {
+    height: auto;
+}
+
+.heading1 {
+    margin: 120px 0px 20px 0px;
+    text-align: center;
+}
+
+.h1-first {
+    font-size: 6vw;
+    color: rgb(185, 179, 179);
+    padding: 10px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.image-mine {
+    height: 35vh;
+    width: 35vh;
+    background-image: url('second.jpg');
+    background-size: cover;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: -145px;
+    position: relative;
+    border: 5px solid white;
+}
+
+.about-us {
+    width: 80%;
+    text-align: justify;
+    font-size: 25px;
+    font-family: 'Josefin Slab', serif;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 1.6;
+}
+
+.nav-link1 {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 15px;
+    border-radius: 50%;
+    transition: color 0.5s, box-shadow 0.5s;
+}
+
+.nav-link1:hover {
+    color: rgb(204, 195, 195);
+    box-shadow: 0px 0px 14px rgb(204, 195, 195);
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 4rem;
+}
+
+ul.timeline:before {
+    content: ' ';
+    background-color: #DC3545;
+    display: inline-block;
+    position: absolute;
+    left: 33px;
+    width: 14px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 30px 0;
+    background-color: white;
+}
+
+
+/* Timeline item arrow */
+
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid blue;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+
+/* Timeline item circle marker */
+
+li.timeline-item::before {
+    font-family: "Font Awesome 5.2.0 Free";
+    content: '\f5fc';
+    font-weight: 400;
+    background: #0DCAF0;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: 11px;
+    width: 4vw;
+    height: 8vh;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/*font-family: 'Josefin Slab', serif;
+font-family: 'Krona One', sans-serif;*/
