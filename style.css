@@ -1,3 +1,8 @@
+/*font-family: 'Courgette', cursive;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Shizuru', cursive;
+font-family: 'Spartan', sans-serif;*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -112,59 +117,107 @@
     box-shadow: 0px 0px 14px rgb(204, 195, 195);
 }
 
-ul.timeline {
-    list-style-type: none;
+.div-transition:hover {
+    transform: scale(1.1);
+}
+
+.timeline {
     position: relative;
     padding-left: 4rem;
+    margin: 0 0 0 30px;
+    color: white;
 }
 
-ul.timeline:before {
-    content: ' ';
-    background-color: #DC3545;
-    display: inline-block;
+.timeline:before {
+    content: '';
     position: absolute;
-    left: 33px;
-    width: 14px;
+    left: 0;
+    top: 0;
+    width: 5px;
     height: 100%;
-    z-index: 400;
-    border-radius: 1rem;
+    background: rgb(84, 137, 197);
 }
 
-li.timeline-item {
-    margin: 30px 0;
-    background-color: white;
+.timeline-container {
+    position: relative;
+    margin-bottom: 2.5rem;
 }
 
+.timeline-icon {
+    position: absolute;
+    left: -88px;
+    top: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+    background: rgb(148, 109, 109);
+}
 
-/* Timeline item arrow */
+.timeline-icon i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
-.timeline-arrow {
-    border-top: 0.5rem solid transparent;
-    border-right: 0.5rem solid blue;
-    border-bottom: 0.5rem solid transparent;
+.timeline-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.timeline-body {
+    background: rgb(84, 137, 197);
+    border-radius: 2px;
+    padding: 20px 20px 15px;
+    box-shadow: 2px;
+}
+
+.timeline-body:before {
+    content: '';
+    background: inherit;
+    width: 20px;
+    height: 20px;
     display: block;
     position: absolute;
-    left: 2rem;
+    left: -10px;
+    transform: rotate(45deg);
+    border-radius: 0 0 0 2px;
 }
 
-
-/* Timeline item circle marker */
-
-li.timeline-item::before {
-    font-family: "Font Awesome 5.2.0 Free";
-    content: '\f5fc';
-    font-weight: 400;
-    background: #0DCAF0;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    left: 11px;
-    width: 4vw;
-    height: 8vh;
-    z-index: 400;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+.timeline-title {
+    margin-bottom: 1.4rem;
 }
 
+.timeline-title .badge {
+    background: yellow;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
 
-/*font-family: 'Josefin Slab', serif;
-font-family: 'Krona One', sans-serif;*/
+.timeline-subtitle {
+    font-weight: 300;
+    font-style: italic;
+    opacity: .4;
+    margin-top: 16px;
+    font-size: 11px;
+}
+
+.primary .badge,
+.timeline-icon {
+    background: #DC3545;
+}
+
+.info .badge,
+.timeline-icon {
+    background: #DC3545;
+}
+
+.success .badge,
+.timeline-icon {
+    background: #DC3545;
+}
